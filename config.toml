@@ -1,3 +1,5 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "The Odin Blog"
+
+pygmentsUseClasses=true
