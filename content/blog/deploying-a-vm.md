@@ -1,7 +1,7 @@
 ---
 title: "Deploying a VM"
 date: 2018-05-14T02:24:38-05:00
-draft: true
+draft: false
 ---
 
 Oh boy. Deployment has been quite the hassle. I went through three virtual
@@ -33,3 +33,6 @@ Once I got the kinks figured out though, I was actually surprised at how quiet
 the successful build was. This post is actually the test to determine if pushing
 into this blog's repository will trigger a build, but if you don't see anything
 after this sentence you can assume that I have been successful.
+
+Whelp. I had one more step: set up GitHub to send the payload to my Jenkins
+server to trigger the build. Here I go again.
