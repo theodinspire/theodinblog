@@ -5,16 +5,25 @@
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/skeleton.css">
+    <link rel="stylesheet" href="/styles/site.css">
     <link rel="stylesheet" href="/styles/syntax.css">
   </head>
   <body>
-    <!-- Code that all your templates share, like a header -->
-    {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
-    {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-    {{ end }}
+      <header class="masthead">
+          <div class="container">
+              <h1>{{ .Site.Title }}</h1>
+          </div>
+      </header>
+      <div class="container">
+          <!-- Code that all your templates share, like a header -->
+          {{ block "main" . }}
+            <!-- The part of the page that begins to differ between templates -->
+          {{ end }}
+          {{ block "footer" . }}
+          <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+          {{ end }}
+      </div>
   </body>
 </html>
