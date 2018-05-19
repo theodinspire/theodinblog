@@ -1,5 +1,5 @@
 baseURL = "https://blog.theodinspire.com/"
 languageCode = "en-us"
-title = "The Odin Blog"
+title = "The Odin Spire"
 
 pygmentsUseClasses=true
