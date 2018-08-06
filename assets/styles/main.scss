@@ -1,0 +1,86 @@
+/* Variables */
+$main: #55555c;
+$accent: #333336;
+$body: #eeeeef;
+
+$header-height: 12rem;
+$icon-size: 16rem;
+
+/* Items */
+body {
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+  font-family: 'Open Sans', sans-serif;
+
+  /* Visual */
+  background-color: $main;
+
+  /* Misc */
+}
+
+header {
+  /* Position */
+
+  /* Box Model */
+  height: $header-height;
+
+  /* Typography */
+
+  /* Visual */
+  background-color: $accent;
+
+  /* Misc */
+}
+
+.icon {
+  /* Position */
+  position: absolute;
+  left: calc(50vw - #{$icon-size} / 2);
+  top: calc(#{$header-height} - ((1rem + #{$icon-size}) / 2));
+
+  /* Box Model */
+  width: $icon-size;
+  height: $icon-size;
+
+  /* Typography */
+
+  /* Visual */
+  border: 1rem solid $accent;
+  border-radius: calc(1rem + (#{$icon-size} / 2));
+
+  background-color: white;
+
+  /* Misc */
+}
+
+.title {
+  /* Position */
+
+  /* Box Model */
+  font-size: 12rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  /* Typography */
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  text-align: center;
+
+  /* Visual */
+  color: $body;
+
+  /* Misc */
+}
+
+/* Position */
+
+/* Box Model */
+
+/* Typography */
+
+/* Visual */
+
+/* Misc */

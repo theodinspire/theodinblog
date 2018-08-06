@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ block "title" . }}
-      {{ .Site.Title }}
-    {{ end }}</title>
-    <link rel="stylesheet" href="/styles/normalize.css">
-    <link rel="stylesheet" href="/styles/skeleton.css">
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/styles/syntax.css">
-  </head>
-  <body>
-      <header class="masthead">
-          <div class="container">
-              <h1>{{ .Site.Title }}</h1>
-          </div>
-      </header>
-      <div class="container">
-          <!-- Code that all your templates share, like a header -->
-          {{ block "main" . }}
-            <!-- The part of the page that begins to differ between templates -->
-          {{ end }}
-          {{ block "footer" . }}
-          <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-          {{ end }}
-      </div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <!-- <link rel="stylesheet" href="/styles/skeleton.css" /> -->
+  {{ $style := resources.Get "styles/main.scss" | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  <link rel="stylesheet" href="/styles/syntax.css" />
+</head>
+
+<body>
+  <header>
+    <img class="icon" src="/images/self-512.png" alt="" />
+  </header>
+  <h1 class="title">{{ .Site.Title }}</h1>
+
+  <div class="container content">
+    <div class="main">
+      <!-- Code that all your templates share, like a header -->
+      {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+      {{ end }} {{ block "footer" . }}
+      <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+      {{ end }}
+    </div>
+  </div>
+
+</body>
+
 </html>
