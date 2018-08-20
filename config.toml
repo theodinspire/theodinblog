@@ -3,3 +3,4 @@ languageCode = "en-us"
 title = "the Odin Spire"
 
 pygmentsUseClasses=true
+pygmentsCodeFences=true
