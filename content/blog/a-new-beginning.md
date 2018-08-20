@@ -28,15 +28,15 @@ posts a week will help. I just need somewhere to put it, hence this site.
 ### 2. Start a New Site!
 This one is also easy. Go to your repositories folder and enter
 
-{{< highlight shell >}}
+``` shell
 hugo new site <sitename>
-{{< / highlight >}}
+```
 
 Oh cool! I have a new site put together. Let's run it!
 
-{{< highlight shell >}}
+``` shell
 hugo server -D
-{{< / highlight >}}
+```
 
 And when I go to the landing page, look how wonderful, nothing's there! At least
 it's a blank page and a not a "This site cannot be reached" page. That means
@@ -47,19 +47,19 @@ Hugo does it's magic based on archetypes and whatnot. But we don't have any of
 that yet. Luckily when you generate a site, it builds a default template file at
 `\archetypes\default.md`.
 
-{{< highlight markdown "linenos=table" >}}
+``` markdown
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 ---
-{{< / highlight >}}
+```
 
 One just runs the command
 
-{{< highlight shell >}}
+``` shell
 hugo new <section> <post-name>.md
-{{< / highlight >}}
+```
 
 And hugo will copy the default, filling in the the post name and date, into
 `content/<section>/<post-name>.md` It has been in this generated file that I
@@ -84,10 +84,10 @@ You've noticed how in the last two sections have syntax highlighting. I still
 have to set that up. Hugo does come with [syntax highlighting built in](https://gohugo.io/content-management/syntax-highlighting/#generate-syntax-highlighter-css)
 But there's some set up to that:
 
-{{< highlight shell >}}
+``` shell
 mkdir static/styles
 hugo gen chromastyles --style=friendly > static/styles/syntax.css
-{{< / highlight >}}
+```
 
 `/static` is where one puts static files like CSS, JavaScript or
 images, basically everything that Hugo doesn't govern. However, the templates

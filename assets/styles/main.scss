@@ -1,0 +1,178 @@
+/* Variables */
+$main: #55555c;
+$accent: #333336;
+$body: #eeeeef;
+
+$header-height: 12rem;
+$icon-size: 16rem;
+
+/* Items */
+body {
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 2em;
+
+  /* Visual */
+  background-color: $main;
+
+  /* Misc */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Position */
+
+  /* Box Model */
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  /* Typography */
+  font-weight: 300;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+a {
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    text-decoration: underline;
+  }
+}
+
+nav {
+  /* Position */
+
+  /* Box Model */
+  height: $header-height;
+
+  /* Typography */
+
+  /* Visual */
+  background-color: $accent;
+
+  /* Misc */
+}
+
+.icon {
+  $stroke-width: 1rem;
+
+  /* Position */
+  position: absolute;
+  left: calc(50vw - #{$icon-size} / 2);
+  top: calc(#{$header-height} - #{$stroke-width} - #{$icon-size} / 2);
+
+  /* Box Model */
+  width: $icon-size;
+  height: $icon-size;
+
+  /* Typography */
+
+  /* Visual */
+  border: 1rem solid $accent;
+  border-radius: calc(1rem + (#{$icon-size} / 2));
+
+  background-color: white;
+
+  /* Misc */
+}
+
+.site-name {
+  /* Position */
+
+  /* Box Model */
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+
+  /* Typography */
+  font-size: 9rem;
+  font-family: 'Open Sans Condensed';
+  font-weight: 300;
+  text-align: center;
+
+  /* Visual */
+  a {
+    color: $body;
+    text-decoration: none;
+  }
+
+  /* Misc */
+}
+
+main {
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
+}
+
+article {
+  $article-padding: 2rem;
+
+  /* Position */
+
+  /* Box Model */
+  margin: 3rem;
+  padding: $article-padding;
+  border-radius: 0.5rem;
+
+  /* Typography */
+
+  /* Visual */
+  background-color: $body;
+
+  /* Misc */
+  .title {
+    /* Position */
+
+    /* Box Model */
+    margin-bottom: 0.75rem;
+
+    /* Typography */
+    text-align: right;
+
+    /* Visual */
+
+    /* Misc */
+  }
+
+  .byline {
+    /* Position */
+
+    /* Box Model */
+    margin-top: 0;
+
+    /* Typography */
+    font-size: smaller;
+    font-weight: 300;
+    text-align: right;
+
+    /* Visual */
+
+    /* Misc */
+  }
+
+  .highlight {
+    max-width: calc(100% - 2 * #{$article-padding});
+    overflow-x: scroll;
+  }
+}
+/* Position */
+
+/* Box Model */
+
+/* Typography */
+
+/* Visual */
+
+/* Misc */

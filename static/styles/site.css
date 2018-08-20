@@ -1,49 +1,161 @@
-@import url('https://fonts.googleapis.com/css?family=Federo');
-@import url('https://fonts.googleapis.com/css?family=Dorsa');
-@import url('https://fonts.googleapis.com/css?family=Antic+Didone');
-@import url('https://fonts.googleapis.com/css?family=BenchNine');
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100');
-@import url('https://fonts.googleapis.com/css?family=Wire+One');
+/* Variables */
+:root {
+  --main: #55555c;
+  --accent: #333336;
+  --body: #eeeeef;
+}
 
-
+/* Items */
 body {
-    background-color: #55555c;
-    margin-right: 300px;
-    padding-top: 20px;
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+  font-family: 'Open Sans', sans-serif;
+
+  /* Visual */
+  background-color: #55555c;
+
+  /* Misc */
 }
 
 .masthead {
-    background-color: #333336;
-    color: #eeeeef;
+  /* Position */
 
-    position: absolute;
-    /* position: fixed; */
-    z-index: 1;
-    /* height: 100%; */
-    min-height: 100%;
-    top: 0;
-    right: 0;
-    width: 300px;
+  /* Box Model */
+  min-width: 100%;
+  padding: .25em 0;
 
-    padding-top: 50px;
+  /* Typography */
+
+  /* Visual */
+  background-color: #333336;
+  color: #eeeeef;
+
+  /* Misc */
 }
 
 .masthead h1 {
-    font-size: 7em;
-    text-align: right;
-    line-height: 0.9em;
+  /* Position */
 
-    font-family: 'Federo';
-    margin-bottom: 100px;
+  /* Box Model */
+  margin: 0.25em 0;
+
+  /* Typography */
+  font-family: 'Cormorant';
+  font-weight: 300;
+  font-size: 5em;
+  text-align: right;
+  line-height: 0.9em;
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.container {
+  /* Position */
+
+  /* Box Model */
+  max-width: 1000px;
+  margin: 0 auto;
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.content {
+  /* Position */
+
+  /* Box Model */
+  padding-top: 1em;
+
+  /* Typography */
+
+  /* Visual */
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  column-gap: 2.5em;
+
+  /* Misc */
+}
+
+.sidebar {
+  /* Position */
+
+  /* Box Model */
+  border-radius: 0.4em;
+  padding: 0.75em;
+
+  /* Typography */
+
+  /* Visual */
+  background-color: #eeeeef;
+
+  /* Misc */
+}
+
+.list {
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
+}
+
+.list > article {
+  /* Box Model */
+  margin-bottom: 1.5em;
+}
+
+.list > article:last-child {
+  margin-bottom: auto;
 }
 
 article {
-    background-color: #eeeeef;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+  /* Position */
+
+  /* Box Model */
+  padding: 1em;
+  border-radius: 0.7em;
+
+  /* Typography */
+
+  /* Visual */
+  background-color: #eeeeef;
+
+  /* Misc */
 }
 
 footer.permalink {
-    text-align: right;
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+  text-align: right;
+
+  /* Visual */
+
+  /* Misc */
 }
+
+/* Template */
+
+  /* Position */
+
+  /* Box Model */
+
+  /* Typography */
+
+  /* Visual */
+
+  /* Misc */
