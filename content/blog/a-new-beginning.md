@@ -12,6 +12,8 @@ is to write. I also want to get better at website building, and in this
 particular iteration, get better at [Hugo](https://gohugo.io/); thus I suppose
 the only way to get better at this is to use Hugo and build a site.
 
+<!--more-->
+
 I might as well use this to document the steps I used to create this site.
 
 ### 1. Install Hugo
