@@ -11,6 +11,8 @@ Some of them are specific to developing skills that would only benefit me profes
 there are some personal goals that I think would greatly benefit my career or my fitness to
 tackle my work.
 
+<!--more-->
+
 ### 1. Bullet Journaling
 My team does a daily stand up where we discuss what we did yesterday and what we plan on
 undertaking the next day. I always gloss over what happened yesterday because I've put it behind

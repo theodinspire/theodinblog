@@ -11,6 +11,8 @@ logging into the machine locally. The third machine probably didn't need to be
 scrapped, but I had not set up the DNS to the system properly and didn't figure
 out why I couldn't see the Jenkins site until after I nuked it.
 
+<!--more-->
+
 It took me four days to figure out what was up, and I poured way too much
 personal time into the process. I have already been behind on sleep and some of
 the work I did on this was in the middle of the night after having some false
