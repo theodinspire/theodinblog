@@ -1,7 +1,7 @@
 ---
 title: "Fall 2018 Goals"
 date: 2018-10-29T15:35:58-05:00
-draft: true
+draft: false
 ---
 Uffda.
 
